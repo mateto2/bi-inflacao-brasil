@@ -47,6 +47,8 @@ bi-inflacao-brasil/
 ├── dados/
 │   ├── brutos/      # respostas originais das APIs (JSON)
 │   └── tratados/    # tabelas limpas (CSV) para o Power BI
+├── dashboard/
+│   └── Dashboard_Inflacao.pbix      # dashboard Power BI (6 páginas)
 ├── documentacao/
 │   ├── 01_indicadores.md
 │   ├── 02_perguntas_regras_negocio.md
@@ -71,6 +73,18 @@ python notebooks/coleta_tratamento.py
 
 No Google Colab: abra `notebooks/01_coleta_tratamento.ipynb` e use *Ambiente de execução → Executar tudo*. As tabelas tratadas são gravadas em `dados/tratados/`, e o resultado das verificações de qualidade fica em `dados/tratados/log_qualidade.csv`.
 
+## Principais resultados (jan/2021–out/2026)
+
+- Inflação acumulada (IPCA): **38,59%**. Pico em 12 meses de 12,13% (abr/2022).
+- Maior aumento de preço: **Vestuário (+47,8%)**. Maior contribuição: **Alimentação e bebidas (7,5 p.p.)**.
+- Maior inflação acumulada: **São Paulo (40,8%)**. Menor: **Porto Alegre (35,6%)**.
+- Meses mais inflacionários: **fevereiro e março**. Menos inflacionário: **agosto**.
+- Salário mínimo: +47,4% nominal, o que dá **ganho real de 6,6%**.
+
+## Como abrir o dashboard
+
+Abra `dashboard/Dashboard_Inflacao.pbix` no Power BI Desktop (gratuito). Para atualizar, use *Página Inicial → Atualizar*: os dados são lidos dos CSVs deste repositório.
+
 ## Metodologia (DEILAS)
 
 **D**efina o objetivo → **E**stabeleça métricas → **I**dentifique fontes → **L**impe as bases → **A**nalise os dados → **S**ugira decisões.
@@ -84,5 +98,5 @@ No Google Colab: abra `notebooks/01_coleta_tratamento.ipynb` e use *Ambiente de 
 | Fontes de dados identificadas e verificadas | Concluído (`fontes_dados.md`) |
 | Método de limpeza e mineração | Concluído (`documentacao/03`) |
 | Extração e tratamento dos dados | Executado no Colab em 12/11/2026 (todas as verificações OK) |
-| Dashboard Power BI | A desenvolver |
-| Sugestão de decisões | Após a análise |
+| Dashboard Power BI | Concluído (`dashboard/Dashboard_Inflacao.pbix`) |
+| Resultados e sugestão de decisões | Concluído (Seção 4 do documento) |
