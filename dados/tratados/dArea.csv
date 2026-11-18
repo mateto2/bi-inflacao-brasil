@@ -1,0 +1,18 @@
+﻿area_codigo,area_nome,uf,nivel,macrorregiao,peso_regional_pct
+1,Brasil,,Brasil,,100.0
+1501,Belém,PA,Região Metropolitana,Norte,
+2301,Fortaleza,CE,Região Metropolitana,Nordeste,
+2601,Recife,PE,Região Metropolitana,Nordeste,
+2901,Salvador,BA,Região Metropolitana,Nordeste,
+3101,Belo Horizonte,MG,Região Metropolitana,Sudeste,
+3201,Grande Vitória,ES,Região Metropolitana,Sudeste,
+3301,Rio de Janeiro,RJ,Região Metropolitana,Sudeste,
+3501,São Paulo,SP,Região Metropolitana,Sudeste,
+4101,Curitiba,PR,Região Metropolitana,Sul,
+4301,Porto Alegre,RS,Região Metropolitana,Sul,
+1200401,Rio Branco,AC,Município,Norte,
+2111300,São Luís,MA,Município,Nordeste,
+2800308,Aracaju,SE,Município,Nordeste,
+5002704,Campo Grande,MS,Município,Centro-Oeste,
+5208707,Goiânia,GO,Município,Centro-Oeste,
+5300108,Brasília,DF,Município,Centro-Oeste,
