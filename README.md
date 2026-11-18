@@ -47,8 +47,6 @@ bi-inflacao-brasil/
 ├── dados/
 │   ├── brutos/      # respostas originais das APIs (JSON)
 │   └── tratados/    # tabelas limpas (CSV) para o Power BI
-├── dashboard/
-│   └── Dashboard_Inflacao.pbix      # dashboard Power BI (6 páginas)
 ├── documentacao/
 │   ├── 01_indicadores.md
 │   ├── 02_perguntas_regras_negocio.md
@@ -57,6 +55,7 @@ bi-inflacao-brasil/
 ├── notebooks/
 │   ├── 01_coleta_tratamento.ipynb   # notebook para o Google Colab
 │   └── coleta_tratamento.py         # mesmo pipeline em script
+├── Dashboard_Inflacao.pbix         # dashboard Power BI (6 páginas)
 ├── README.md
 ├── fontes_dados.md
 └── requirements.txt
@@ -83,7 +82,7 @@ No Google Colab: abra `notebooks/01_coleta_tratamento.ipynb` e use *Ambiente de 
 
 ## Como abrir o dashboard
 
-Abra `dashboard/Dashboard_Inflacao.pbix` no Power BI Desktop (gratuito). Para atualizar, use *Página Inicial → Atualizar*: os dados são lidos dos CSVs deste repositório.
+Abra `Dashboard_Inflacao.pbix` no Power BI Desktop (gratuito). Para atualizar, use *Página Inicial → Atualizar*: os dados são lidos dos CSVs deste repositório.
 
 ## Metodologia (DEILAS)
 
@@ -98,5 +97,5 @@ Abra `dashboard/Dashboard_Inflacao.pbix` no Power BI Desktop (gratuito). Para at
 | Fontes de dados identificadas e verificadas | Concluído (`fontes_dados.md`) |
 | Método de limpeza e mineração | Concluído (`documentacao/03`) |
 | Extração e tratamento dos dados | Executado no Colab em 12/11/2026 (todas as verificações OK) |
-| Dashboard Power BI | Concluído (`dashboard/Dashboard_Inflacao.pbix`) |
+| Dashboard Power BI | Concluído (`Dashboard_Inflacao.pbix`) |
 | Resultados e sugestão de decisões | Concluído (Seção 4 do documento) |
