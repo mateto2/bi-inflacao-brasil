@@ -17,7 +17,7 @@ Todas as fontes são públicas e oficiais, de acesso gratuito e sem cadastro.
 | F3 | IBGE | SIDRA Tabela 1736: INPC série histórica com número-índice | Sensibilidade do salário real | P5 |
 | F4 | Banco Central do Brasil | SGS série 1619: Salário mínimo | Principal (salário mínimo) | P5 |
 | F5 | Banco Central do Brasil | SGS série 433: IPCA variação mensal | Validação cruzada | P1 |
-| F6 | Ipea | Ipeadata MTE12_SALMIN12: Salário mínimo vigente | Validação histórica | P5 |
+| F6 | Ipea | Ipeadata MTE12_SALMIN12: Salário mínimo vigente | Fonte do salário mínimo (conferência cruzada com F4) | P5 |
 | F7 | IBGE | Fascículo mensal "Indicadores IBGE: IPCA e INPC" | Pesos regionais e notas metodológicas | P3 |
 
 ---
@@ -107,7 +107,8 @@ Todas as fontes são públicas e oficiais, de acesso gratuito e sem cadastro.
 | Nome oficial | Salário mínimo vigente (nominal; não considera abonos) |
 | Consulta | http://www.ipeadata.gov.br (série MTE12_SALMIN12) |
 | API (OData) | `http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='MTE12_SALMIN12')` |
-| Limitação | Os metadados indicam **última atualização em 30/06/2025**, o que não garante a cobertura de 2026. Por isso o projeto usa a série SGS 1619 como fonte principal e o Ipeadata só como conferência histórica. |
+| Cobertura verificada | Série completa com 1038 observações desde 1940, com valores até dez/2026 (consulta em 18/11/2026). Os metadados mostram uma data de atualização antiga (30/06/2025), mas a série está em dia. |
+| Uso no projeto | Fonte do salário mínimo junto com o BCB/SGS 1619: os 70 meses do período são **idênticos** nas duas fontes (verificação QD-10). Arquivo bruto: `dados/brutos/ipeadata_mte12_salmin12.json`. |
 
 ### F7 — IBGE, fascículo "Indicadores IBGE: IPCA e INPC"
 
@@ -130,6 +131,7 @@ Todas as fontes são públicas e oficiais, de acesso gratuito e sem cadastro.
 | `sidra_1736_inpc.json` | dados/brutos | F3 | Número-índice e variação do INPC |
 | `bcb_sgs_1619_salario_minimo.json` | dados/brutos | F4 | Salário mínimo mensal |
 | `bcb_sgs_433_ipca_mensal.json` | dados/brutos | F5 | IPCA mensal (validação) |
+| `ipeadata_mte12_salmin12.json` | dados/brutos | F6 | Salário mínimo vigente (Ipeadata) |
 | `dCalendario.csv`, `dGrupo.csv`, `dArea.csv` | dados/tratados | derivados | Dimensões do modelo estrela |
 | `fIPCA_Brasil.csv`, `fIPCA_Grupo.csv`, `fIPCA_Area.csv` | dados/tratados | F1, F2 | Fatos do IPCA |
 | `fSalarioMinimo.csv`, `fINPC_Brasil.csv` | dados/tratados | F4, F2, F3 | Salário mínimo nominal, real e índice de poder de compra; INPC |

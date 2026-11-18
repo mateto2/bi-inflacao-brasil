@@ -21,7 +21,7 @@ DataFrames padronizados (formato longo)
         │  3. TRANSFORMAÇÃO: pivotagem, recorte do período, campos derivados
         ▼
 Modelo estrela (3 dimensões + 5 fatos)
-        │  4. VALIDAÇÃO: verificações QD-01 a QD-09 → log
+        │  4. VALIDAÇÃO: verificações QD-01 a QD-10 → log
         ▼
 dados/tratados/*.csv  ──►  Power BI
 ```
@@ -85,6 +85,7 @@ O pipeline registra o resultado de cada verificação em `dados/tratados/log_qua
 | QD-06 | 16 áreas presentes em todos os meses | Registrar |
 | QD-07 | Mudanças do SM só em janeiro, com exceção conhecida em mai/2023 | Conferir com o decreto |
 | QD-09 | IPCA mensal IBGE = IPCA mensal BCB/SGS 433 | Registrar |
+| QD-10 | Salário mínimo BCB/SGS 1619 = Ipeadata MTE12_SALMIN12 | Registrar |
 
 ---
 

@@ -20,3 +20,4 @@ QD-05,"12m por produtório = 12m publicado (±0,01 p.p.)",OK,dif máx=0.005 p.p.
 QD-06,16 áreas em todos os meses,OK,mín=16
 QD-07,mudanças do SM só em janeiro (exceção esperada: 2023-05),OK,mudanças fora de jan: ['2023-05']
 QD-09,IPCA mensal IBGE = BCB/SGS 433,OK,dif máx=0.000
+QD-10,salário mínimo BCB/SGS 1619 = Ipeadata MTE12_SALMIN12,OK,70 meses comparados; dif máx=0.00

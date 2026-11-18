@@ -1,0 +1,517 @@
+{
+ "@odata.context": "http://ipeadata.gov.br/api/odata4/$metadata#Collection(Ipeadata.OData4.Models.Valor)",
+ "_nota": "Extraído de http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='MTE12_SALMIN12') em 18/11/2026; recorte dez/2020 a dez/2026 (a série completa tem 1038 observações desde 1940).",
+ "value": [
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2020-12-01T00:00:00-03:00",
+   "VALVALOR": 1045,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-01-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-02-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-03-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-04-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-05-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-06-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-07-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-08-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-09-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-10-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-11-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2021-12-01T00:00:00-03:00",
+   "VALVALOR": 1100,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-01-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-02-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-03-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-04-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-05-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-06-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-07-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-08-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-09-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-10-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-11-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2022-12-01T00:00:00-03:00",
+   "VALVALOR": 1212,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-01-01T00:00:00-03:00",
+   "VALVALOR": 1302,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-02-01T00:00:00-03:00",
+   "VALVALOR": 1302,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-03-01T00:00:00-03:00",
+   "VALVALOR": 1302,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-04-01T00:00:00-03:00",
+   "VALVALOR": 1302,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-05-01T00:00:00-03:00",
+   "VALVALOR": 1320,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-06-01T00:00:00-03:00",
+   "VALVALOR": 1320,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-07-01T00:00:00-03:00",
+   "VALVALOR": 1320,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-08-01T00:00:00-03:00",
+   "VALVALOR": 1320,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-09-01T00:00:00-03:00",
+   "VALVALOR": 1320,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-10-01T00:00:00-03:00",
+   "VALVALOR": 1320,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-11-01T00:00:00-03:00",
+   "VALVALOR": 1320,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2023-12-01T00:00:00-03:00",
+   "VALVALOR": 1320,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-01-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-02-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-03-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-04-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-05-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-06-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-07-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-08-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-09-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-10-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-11-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2024-12-01T00:00:00-03:00",
+   "VALVALOR": 1412,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-01-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-02-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-03-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-04-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-05-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-06-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-07-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-08-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-09-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-10-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-11-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2025-12-01T00:00:00-03:00",
+   "VALVALOR": 1518,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-01-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-02-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-03-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-04-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-05-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-06-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-07-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-08-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-09-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-10-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-11-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  },
+  {
+   "SERCODIGO": "MTE12_SALMIN12",
+   "VALDATA": "2026-12-01T00:00:00-03:00",
+   "VALVALOR": 1621,
+   "NIVNOME": "",
+   "TERCODIGO": ""
+  }
+ ]
+}

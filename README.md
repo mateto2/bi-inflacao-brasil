@@ -38,7 +38,7 @@ Desenvolver um dashboard de BI que consolide dados oficiais de inflação em uma
 
 ## Fontes de dados
 
-IBGE (SIDRA: tabelas 7060, 1737 e 1736), Banco Central do Brasil (SGS: séries 1619 e 433) e Ipeadata (MTE12_SALMIN12, para validação). Catálogo completo, com links e códigos verificados, em [`fontes_dados.md`](fontes_dados.md).
+IBGE (SIDRA: tabelas 7060, 1737 e 1736), Banco Central do Brasil (SGS: séries 1619 e 433) e Ipeadata (MTE12_SALMIN12, salário mínimo, conferido com o BCB). Catálogo completo, com links e códigos verificados, em [`fontes_dados.md`](fontes_dados.md).
 
 ## Estrutura do repositório
 
@@ -79,6 +79,12 @@ No Google Colab: abra `notebooks/01_coleta_tratamento.ipynb` e use *Ambiente de 
 - Maior inflação acumulada: **São Paulo (40,8%)**. Menor: **Porto Alegre (35,6%)**.
 - Meses mais inflacionários: **fevereiro e março**. Menos inflacionário: **agosto**.
 - Salário mínimo: +47,4% nominal, o que dá **ganho real de 6,6%**.
+
+## Links
+
+- Repositório: https://github.com/mateto2/bi-inflacao-brasil
+- Dashboard (Power BI): https://github.com/mateto2/bi-inflacao-brasil/blob/main/Dashboard_Inflacao.pbix
+- Notebook no Google Colab: https://colab.research.google.com/github/mateto2/bi-inflacao-brasil/blob/main/notebooks/01_coleta_tratamento.ipynb
 
 ## Como abrir o dashboard
 

@@ -8,6 +8,7 @@ Fontes (códigos verificados nas APIs oficiais em 12/11/2026):
   - IBGE/SIDRA Tab. 1736  INPC número-índice e variação mensal (sensibilidade)
   - BCB/SGS 1619          Salário mínimo nominal vigente (R$)
   - BCB/SGS 433           IPCA variação mensal (validação cruzada)
+  - Ipeadata MTE12_SALMIN12 Salário mínimo vigente (conferência cruzada com SGS 1619)
 
 Uso (Google Colab ou local):
     !pip install -r requirements.txt
@@ -43,6 +44,7 @@ DIR_TRATADOS = RAIZ / "dados" / "tratados"
 
 IBGE_API = "https://servicodados.ibge.gov.br/api/v3/agregados"
 BCB_API = "https://api.bcb.gov.br/dados/serie/bcdata.sgs.{codigo}/dados"
+IPEA_API = "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='{codigo}')"
 
 CAT_INDICE_GERAL = 7169
 CAT_GRUPOS = [7170, 7445, 7486, 7558, 7625, 7660, 7712, 7766, 7786]
@@ -139,6 +141,19 @@ def coletar_sgs(nome: str, codigo: int, inicio: str = "01/12/2020", fim: str = "
     return df
 
 
+def coletar_ipeadata(nome: str, codigo: str) -> pd.DataFrame | None:
+    """Salário mínimo no Ipeadata. Não interrompe o pipeline se o serviço estiver fora do ar."""
+    try:
+        dados = get_json(IPEA_API.format(codigo=codigo))
+    except Exception as e:  # noqa: BLE001
+        print(f"  Ipeadata indisponível ({e}); conferência QD-10 não realizada")
+        return None
+    salvar_bruto(nome, dados)
+    df = pd.DataFrame(dados["value"])
+    df["data"] = pd.to_datetime(df["VALDATA"].str[:10])
+    return df.rename(columns={"VALVALOR": "valor"})[["data", "valor"]]
+
+
 # --------------------------------------------------------------------------
 # 2. LIMPEZA
 # --------------------------------------------------------------------------
@@ -214,6 +229,7 @@ def main() -> None:
     inpc_raw = coletar_sidra("sidra_1736_inpc", 1736, "202012", FIM, [2289, 44], "N1[all]")
     sm_raw = coletar_sgs("bcb_sgs_1619_salario_minimo", 1619)
     sgs433_raw = coletar_sgs("bcb_sgs_433_ipca_mensal", 433, "01/01/2021")
+    ipea = coletar_ipeadata("ipeadata_mte12_salmin12", "MTE12_SALMIN12")
 
     print("== 2. LIMPEZA ==")
     br, gr, ar = limpar_sidra(br_raw), limpar_sidra(gr_raw), limpar_sidra(ar_raw)
@@ -308,6 +324,12 @@ def main() -> None:
     d433 = (val433["valor"] - val433["variacao_mensal_pct"]).abs().max()
     registrar("QD-09", "IPCA mensal IBGE = BCB/SGS 433", d433 <= 0.001, f"dif máx={d433:.3f}")
 
+    if ipea is not None:
+        v = fsm[["data", "salario_minimo_nominal_rs"]].merge(ipea, on="data", how="left")
+        dsm = (v["salario_minimo_nominal_rs"] - v["valor"]).abs()
+        registrar("QD-10", "salário mínimo BCB/SGS 1619 = Ipeadata MTE12_SALMIN12",
+                  bool(v["valor"].notna().all() and dsm.max() == 0), f"{len(v)} meses comparados; dif máx={dsm.max():.2f}")
+
     print("== 5. EXPORTAÇÃO ==")
     DIR_TRATADOS.mkdir(parents=True, exist_ok=True)
     saidas = {"dCalendario": dcal, "dGrupo": dgr, "dArea": dar, "fIPCA_Brasil": fbr,
@@ -319,7 +341,7 @@ def main() -> None:
     (DIR_TRATADOS / "metadados_extracao.json").write_text(json.dumps({
         "data_extracao": inicio_exec.isoformat(timespec="seconds"),
         "periodo": f"{INICIO}-{FIM}", "mes_base_salario_real": MES_BASE_REAL,
-        "fontes": ["IBGE/SIDRA 7060", "IBGE/SIDRA 1737", "IBGE/SIDRA 1736", "BCB/SGS 1619", "BCB/SGS 433"],
+        "fontes": ["IBGE/SIDRA 7060", "IBGE/SIDRA 1737", "IBGE/SIDRA 1736", "BCB/SGS 1619", "BCB/SGS 433", "Ipeadata MTE12_SALMIN12"],
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     falhas = [l for l in LOG if l["resultado"] == "FALHA"]
     print(f"\nConcluído. {len(falhas)} verificação(ões) com FALHA. Ver dados/tratados/log_qualidade.csv")
